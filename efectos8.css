@@ -1,0 +1,138 @@
+﻿*{box-sizing: border-box;}
+
+body{margin: 0;}
+
+/*dar estilo al header*/
+
+.header{background-color: lightsteelblue;
+        padding: 30px;
+        text-align:center;
+}
+          
+/*dar estilo a la barra navegación
+.topnav{overflow: hidden;
+        background-color: violet;
+        padding: 15px;
+}*/
+
+/*estilo a los link
+.topnav a{float: left;
+	      display: block;
+		  color: white;
+		  text-align: center;
+		  padding: 12px 12px;
+		  text-decoration: none;
+}*/
+
+ul {list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: violet;
+}
+
+li {float: left;
+}
+
+li a, .dropbtn {
+  display: inline-block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {background-color: skyblue;
+}
+
+li.dropdown {display: inline-block;
+}
+
+.dropdown-content {display: none;
+				   position: absolute;
+				   background-color: #f9f9f9;
+				   min-width: 160px;
+				   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+				   z-index: 1;
+}
+
+.dropdown-content a {color: black;
+					 padding: 12px 16px;
+					 text-decoration: none;
+					 display: block;
+				     text-align: left;
+}
+
+.dropdown-content a:hover {background-color: skyblue;}
+
+.dropdown:hover .dropdown-content {display: block;
+}
+
+/*cambiar color cuando hover*/
+.topnav a:hover{background-color: 	gainsboro;
+				color:black;
+}
+
+.column h2{text-align:center;}
+
+/*crear 3 columnas una al lado de la otra*/
+.column{float: left;
+		width: 33.33%;
+		padding: 20px;
+}
+
+
+
+/*limpiar los floats después de las columnas*/
+.row:after{content: "";
+		   display: table;
+		   clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width:600px) {
+		   .column {
+				  width: 100%;
+			}
+}
+/*dar estilo al footer*/
+.footer{background-color: lightsteelblue;
+		text-align:center;
+		padding: 15px;
+		margin-top: 13%;
+}
+
+form {text-align: center;
+	  width: 25em;
+	  margin: 10px auto;
+	  padding: 1px;
+	  border: 10px solid #E0E0E0;
+	  font-size: 1em;
+	  font-family: 'Old Standard TT', serif;
+	  line-height: 1;
+	  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+	  background: #F5F5F5;
+}
+
+label {display: inline-block;
+	   text-align: left;
+	   width: 10em;
+	   vertical-align: bottom;
+	   border-bottom: 1px dashed #CDCDCD;
+	   font-family: 'Old Standard TT', serif;
+}
+
+p{text-align: center;
+   padding: 15px;
+   margin: 15px;
+}
+
+input {display: inline-block;
+		width: 100px;
+		font-family: 'Old Standard TT', serif;
+		padding:5px;
+}
+
+.subm-rest input {width: 110px;
+				   margin: 1px;
+}
